@@ -1,0 +1,12 @@
+{
+  "name": "shoppinglistproject",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Nikolay Pavlov",
+  "license": "MIT",
+  "dependencies": {}
+}
