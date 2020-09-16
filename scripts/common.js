@@ -81,8 +81,8 @@ export const templateHtml = (shoppingItem) => {
     <div class="productName">
         ${shoppingItem.ProductName}
     </div>
-    <p class="">Price: ${shoppingItem.UnitPrice}</p>
-    <p>Items Left: ${(shoppingItem.UnitsInStock > 0) ? shoppingItem.UnitsInStock : 'Out of Stock'}</p>
-    <p>ETA: ${shoppingItem.DeliveryOn.toLocaleDateString('en-GB')}</p>
+    <p class="item-price">Price: ${shoppingItem.UnitPrice}</p>
+    <p class="in-stock">Items Left: ${(shoppingItem.UnitsInStock > 0) ? shoppingItem.UnitsInStock : 'Out of Stock'}</p>
+    <p class="eta">ETA: ${shoppingItem.DeliveryOn.toLocaleDateString('en-GB')}</p>
   </div>`);
   }
