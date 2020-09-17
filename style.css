@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nova+Mono&family=Rajdhani:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 
 body {
     background: linear-gradient(130deg,#5957e6, #579ee6, #b5f1f7);
@@ -11,7 +12,7 @@ h1 {
     text-align: justify;
     padding: 0px;
     margin: 0px;
-    margin-left: 7vw;
+    margin-left: 11vw;
     margin-bottom: 50px;
 }
 
@@ -19,9 +20,46 @@ h1 {
     background-color: #fff;
     border-radius: 7px;
     width: 75vw;
-    margin-bottom: 30px;
+    margin-bottom: 3px;
     padding: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
+#product-name {
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 1vw;
+    font-family: 'Oswald', sans-serif;
+    border-bottom: solid 1px #666666;
+    width: 95%;
+    padding-left: 5px;
+}
+
+.item-details {
+    font-family: 'Oswald', sans-serif;
+    margin-left: 1.5vw;
+    font-size: 18px;
+}
+
+#eta {
+    font-family: 'Oswald', sans-serif;
+    margin-left: 1.5vw;
+    font-size: 16px;
+}
+
+.btn {
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    margin-right: 7px;
+}
+
+#buttons {
+    text-align: right;
+    margin-right: 2vw;
+}
 
