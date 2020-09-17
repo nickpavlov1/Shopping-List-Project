@@ -76,13 +76,10 @@ export const CONTAINER = '#shoppingItems';
 export const templateHtml = (shoppingItem) => {
 
     $(CONTAINER).append(`
-    <div class="item-info">
-    <img class="shoppingItem" item-id="${shoppingItem.id}">
-    <div class="productName">
-        ${shoppingItem.ProductName}
-    </div>
-    <p class="item-price">Price: ${shoppingItem.UnitPrice}</p>
-    <p class="in-stock">Items Left: ${(shoppingItem.UnitsInStock > 0) ? shoppingItem.UnitsInStock : 'Out of Stock'}</p>
-    <p class="eta">ETA: ${shoppingItem.DeliveryOn.toLocaleDateString('en-GB')}</p>
-  </div>`);
+    <div id="item-info" item-id="${shoppingItem.id}>
+        <p class="productName">${shoppingItem.ProductName}</p>
+        <p class="item-price">Price: $${shoppingItem.UnitPrice.toFixed(2)}</p>
+        <p class="in-stock">Items Left: ${(shoppingItem.UnitsInStock > 0) ? shoppingItem.UnitsInStock : 'Out of Stock'}</p>
+        <p class="eta">ETA: ${shoppingItem.DeliveryOn.toLocaleDateString('en-GB')}</p>
+    </div>`);
   }
