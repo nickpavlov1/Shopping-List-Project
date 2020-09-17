@@ -71,15 +71,23 @@ export const shoppingList = [
     }
 ];
 
-export const CONTAINER = '#shoppingItems';
+export const CONTAINER = '#shopping-items';
 
 export const templateHtml = (shoppingItem) => {
 
     $(CONTAINER).append(`
-    <div id="item-info" item-id="${shoppingItem.id}>
-        <p class="productName">${shoppingItem.ProductName}</p>
-        <p class="item-price">Price: $${shoppingItem.UnitPrice.toFixed(2)}</p>
-        <p class="in-stock">Items Left: ${(shoppingItem.UnitsInStock > 0) ? shoppingItem.UnitsInStock : 'Out of Stock'}</p>
-        <p class="eta">ETA: ${shoppingItem.DeliveryOn.toLocaleDateString('en-GB')}</p>
+    <div id="item-info" item-id="${shoppingItem.ProductID}">
+        <div id="product-name">${shoppingItem.ProductName}</div>
+        <p class="item-details">Price: $${shoppingItem.UnitPrice.toFixed(2)}</p>
+        <p class="item-details">Items Left: ${(shoppingItem.UnitsInStock > 0) ? shoppingItem.UnitsInStock : 'Out of Stock'}</p>
+        <p id="eta">ETA: ${shoppingItem.DeliveryOn.toLocaleDateString('en-GB')}</p>
+        <div id="buttons">
+            <button btn-id=${shoppingItem.ProductID} class="btn" type="button">
+                Add To Watchlist
+            </button>
+            <button btn-id=${shoppingItem.ProductID} class="btn" type="button">
+                Add To Cart
+            </button>
+        </div>
     </div>`);
   }
