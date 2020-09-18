@@ -82,7 +82,7 @@ export const templateHtml = (shoppingItem) => {
         <p class="item-details">Items Left: ${(shoppingItem.UnitsInStock > 0) ? shoppingItem.UnitsInStock : 'Out of Stock'}</p>
         <p id="eta">ETA: ${shoppingItem.DeliveryOn.toLocaleDateString('en-GB')}</p>
         <div id="buttons">
-            <button btn-id=${shoppingItem.ProductID} class="btn" type="button">
+            <button btn-id=${shoppingItem.ProductID} class="btn" type="button">             
                 Add To Watchlist
             </button>
             <button btn-id=${shoppingItem.ProductID} class="btn" type="button">
